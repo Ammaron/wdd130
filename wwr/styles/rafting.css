@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #3A5A40;
+    --secondary-color: #588157;
+    --accent1-color: #A3B18A;
+    --accent2-color: #DAD7CD;
+}
+
+.kite-one-regular {
+    font-family: "Kite One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name */
+
+.roboto-400 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+a {
+    text-decoration: none;
+}
+/* Navigation styles */
+nav {
+    display: flex;
+    background-color: var(--primary-color);
+    text-align: center;
+    justify-content: space-between;
+    padding:  0 15px 0 15px;
+}
+
+nav img {
+    max-width: 64px;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+}
+nav a {
+    border: 1px solid var(--accent1-color);
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+/* HERO styles */
+.hero {
+    padding: 10px 0;
+    position: relative;
+    margin: 0px 25px;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero h1 {
+    text-align: center;
+    color: var(--accent2-color);
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    font-size: 48px;
+    background-color: rgba(58, 90, 64, 0.7);
+}
+
+.hero article {
+    margin: 15%;
+    border: 1px solid var(--primary-color);
+    font-size: 12px;
+    overflow: scroll;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    background-color: var(--accent2-color);
+    color: black;
+    opacity: 0.8;
+}
+.hero article img {
+    width: 256px;
+    float: right;
+}
+
+/* history and adventure sections */
+#history {
+    padding: 10px 0;
+    border: 1px solid var(--primary-color);
+    margin: 25px;
+}
+
+#history h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+#adventure {
+    margin: 25px;
+    border: 1px solid var(--primary-color);
+    padding: 10px 0;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "All about Rapids Inc, how Rapids Inc started, what White Water Rafting is, our history, and how you can join us on your next adventure! ">
+    <meta name = "author" content = "Kirby McDonald">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kite+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/rafting.css">
+    <title>About - Rapids Inc</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('./layout/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+            fetch('./layout/footer.html')
+            .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+        });
+    });
+      </script>
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="hero">
+            <img src="./images/about_hero.jpg"/>
+            <div id="title">
+                <h1 class="kite-one-regular">Rafting Inc</h1>
+            </div>
+            <article>
+                <img src="./images/about_happy.jpg" alt="an image of our happy customers!"/>
+                <p class="roboto-400">
+
+                    Aliquam sit amet nibh ligula. Nullam sollicitudin consequat nisl, id congue purus. Nullam at purus ipsum. Aenean vel ex dui. Curabitur ut scelerisque tortor. Ut porttitor non ante et maximus. Pellentesque dictum, enim ac rutrum ullamcorper, metus dolor condimentum ex, sit amet mollis lectus tortor in sem. Quisque fringilla orci quis eros eleifend, a malesuada metus vulputate. Pellentesque pharetra sem a est dignissim dictum. Mauris in urna sit amet velit consequat viverra. Proin vitae fermentum tortor, vel viverra augue.
+                    <br>
+                    Nullam vestibulum, nunc quis viverra feugiat, nunc quam interdum mi, ut aliquet justo justo non lacus. Maecenas tincidunt rhoncus lacus et tempor. Sed vehicula sem mi, at pellentesque leo cursus nec. Aliquam neque felis, elementum non volutpat quis, posuere sagittis mauris. Aliquam tempor, lorem non sollicitudin vestibulum, elit massa maximus tellus, a bibendum mauris orci et est. Cras commodo vestibulum efficitur. Mauris eu porta libero. Praesent sit amet sem feugiat, luctus mi non, finibus diam. Proin feugiat pharetra efficitur. Duis risus nisi, aliquam sit amet turpis id, feugiat lacinia eros. Duis sit amet dolor libero. Nulla facilisi. Suspendisse orci sem, convallis a dapibus ut, malesuada sit amet augue. Quisque fringilla vitae odio id maximus. </p>
+            </article>
+            </div>
+            <section id="history">
+                <h2 class="kite-one-regular">History</h2>
+                <p class="roboto-400">
+
+                    Aliquam sit amet nibh ligula. Nullam sollicitudin consequat nisl, id congue purus. Nullam at purus ipsum. Aenean vel ex dui. Curabitur ut scelerisque tortor. Ut porttitor non ante et maximus. Pellentesque dictum, enim ac rutrum ullamcorper, metus dolor condimentum ex, sit amet mollis lectus tortor in sem. Quisque fringilla orci quis eros eleifend, a malesuada metus vulputate. Pellentesque pharetra sem a est dignissim dictum. Mauris in urna sit amet velit consequat viverra. Proin vitae fermentum tortor, vel viverra augue.
+                    <br>
+                    Nullam vestibulum, nunc quis viverra feugiat, nunc quam interdum mi, ut aliquet justo justo non lacus. Maecenas tincidunt rhoncus lacus et tempor. Sed vehicula sem mi, at pellentesque leo cursus nec. Aliquam neque felis, elementum non volutpat quis, posuere sagittis mauris. Aliquam tempor, lorem non sollicitudin vestibulum, elit massa maximus tellus, a bibendum mauris orci et est. Cras commodo vestibulum efficitur. Mauris eu porta libero. Praesent sit amet sem feugiat, luctus mi non, finibus diam. Proin feugiat pharetra efficitur. Duis risus nisi, aliquam sit amet turpis id, feugiat lacinia eros. Duis sit amet dolor libero. Nulla facilisi. Suspendisse orci sem, convallis a dapibus ut, malesuada sit amet augue. Quisque fringilla vitae odio id maximus. </p>
+            </section>
+            <section id="adventure">
+                <h2 class="kite-one-regular">Adventure Awaits You!</h2>
+                <img src="./images/rafting_image_1.jpg" alt="An image of an adventure you could go on"/>
+                <img src="./images/rafting_image_2.jpg" alt="An image of an adventure you could go on"/>
+                <img src="./images/rafting_image_3.jpg" alt="An image of an adventure you could go on"/>
+                <img src="./images/rafting_image_4.jpg" alt="An image of an adventure you could go on"/>
+                <img src="./images/rafting_image_5.jpg" alt="An image of an adventure you could go on"/>
+            </section>
+    </main>
+    <div id="footer"></div>
+</body>
+</html>
