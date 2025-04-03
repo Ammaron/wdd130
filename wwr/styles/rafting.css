@@ -4,7 +4,9 @@
     --accent1-color: #A3B18A;
     --accent2-color: #DAD7CD;
 }
-
+* {
+    margin: 0;
+}
 .kite-one-regular {
     font-family: "Kite One", sans-serif;
     font-weight: 400;
@@ -31,21 +33,38 @@ nav {
     display: flex;
     background-color: var(--primary-color);
     text-align: center;
-    justify-content: space-between;
-    padding:  0 15px 0 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav img {
     max-width: 64px;
 }
+
+/* nav ul {
+    border-radius: 3px;
+    border: 2px solid var(--accent1-color);
+    padding: 0;
+} */
+
 nav li {
     display: inline;
     list-style-type: none;
 }
+
 nav a {
-    border: 1px solid var(--accent1-color);
-    background-color: var(--accent2-color);
-    color: var(--accent1-color);
+    border: 2px solid var(--accent1-color);
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 5px;
+
 }
 
 nav a:hover {
@@ -103,8 +122,64 @@ nav a:hover {
     text-align: center;
 }
 
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.history-content img {
+    padding: 0 2%;
+}
+
+.history-content p {
+    padding: 0 2%;
+}
+
 #adventure {
     margin: 25px;
     border: 1px solid var(--primary-color);
-    padding: 10px 0;
+    padding: 10px 25px;
+
+}
+
+#adventure img{
+    height: 200px;
+    max-width: 100%;
+}
+
+#adventure-images {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#adventure-images figure{
+    border: 3px solid var(--primary-color);
+    border-radius: 5px;
+}
+#adventure-images figcaption{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    background-color: var(--secondary-color)
+}
+
+footer #copyright {
+    color: var(--accent2-color);
+    padding: 10px;
+}
+footer .socialmedia{
+    display: flex;
+    flex-wrap: row nowrap;
+    padding: 10px;
+}
+
+footer img {
+    max-width: 40px;
+    padding: 10px;
 }
