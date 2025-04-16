@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All about Rapids Inc, how Rapids Inc started, what White Water Rafting is, our history, and how you can join us on your next adventure! ">
+    <meta name="author" content="Kirby McDonald">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kite+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/rafting.css">
+    <title>About - Rapids Inc</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('./layout/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+            fetch('./layout/footer.html')
+            .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+        });
+    });
+      </script>
+<body class="contact">
+    <div id="header"></div>
+    <main>
+        <div class="hero">
+            <video alt="rafting video" width="100%" height="auto" controls autoplay muted loop>
+                <source src="videos/contact_video.mp4" type="video/mp4">
+                Your browser doesn't support video
+            </video>
+        </div>
+        <div id="intro">
+            <h1>ABOUT US</h1>
+        </div>
+        <div class="row1">
+            <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.719662621769!2d-105.27976868765363!3d40.01470907138826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bec2f6bd3aed3%3A0x5dc26cc375887398!2s1708%2013th%20St%20%23200%2C%20Boulder%2C%20CO%2080302%2C%20USA!5e0!3m2!1sen!2spe!4v1744333582499!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact_info">
+                <p>
+                    <p>Rafting Inc</p>
+                    <p>1708 13th St, Suite 200</p>
+                    <p>Boulder, CO 80302</p>
+                    <p>United States</p>
+
+                    <p>(303) 555-7263</p>
+                    <p>(303) 555-8401</p>
+
+                    <p>info@raftinginc.com</p>
+                    <p>support@raftinginc.com</p>
+            </p>
+            </div>
+            <div class="employees">
+                <figure>
+                    <img src="./images/employees/employee1.jpg" alt="Jason McCall – CEO">
+                    <figcaption>Jason McCall – CEO</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/employees/employee2.jpg" alt="Jason McCall – CEO">
+                    <figcaption>Brian Carter – Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/employees/employee3.jpg" alt="Jason McCall – CEO">
+                    <figcaption>Tyler Grant – Marketing Director</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/employees/employee4.jpg" alt="Jason McCall – CEO">
+                    <figcaption>Carlos Rivera – Lead Raft Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/employees/employee5.jpg" alt="Jason McCall – CEO">
+                    <figcaption>Derek Simmons – Customer Experience Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/employees/employee6.jpg" alt="Jason McCall – CEO">
+                    <figcaption>Luke Adams – Safety & Training Supervisor</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/employees/employee7.jpg" alt="Jason McCall – CEO">
+                    <figcaption>Kevin Patel – Finance & Admin</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/employees/employee8.jpg" alt="Jason McCall – CEO">
+                    <figcaption>Eric Nakamura – Logistics Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/employees/employee9.jpg" alt="Jason McCall – CEO">
+                    <figcaption>Michael O'Connor – Social Media & Content Specialist</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="form">
+                <form>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">E-Mail:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <input type="radio" id="html" name="purpose" value="general">
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="css">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label><br>
+                    <p>Input your message below please</p>
+                    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea><br>
+                    <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div>
+                <img src="./images/rafting_image_1.jpg">
+            </div>
+        </div>
+    </main>
+<div id="footer"></div>
+</body>
+</html>
