@@ -81,21 +81,7 @@ nav a:hover {
     color: white;
 }
 
-.trips button {
-    border: 2px solid var(--accent1-color);
-    background-color: var(--secondary-color);
-    color: var(--accent2-color);
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-}
 
-.trips button:hover {
-    border-radius: 20px;
-    background-color: var(--primary-color)
-}
 
 .trips h2, ul{
     background-color: rgba(58, 90, 64, 0.5);
@@ -151,6 +137,20 @@ nav a:hover {
     z-index: 1;
 }
 
+.btn {
+    padding: 16px 32px;
+    border: 2px solid var(--accent1-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    color: var(--accent2-color);
+    text-decoration: none;
+    margin: 4px 2px;
+}
+
+.trips .btn:hover {
+    border-radius: 20px;
+    background-color: var(--primary-color)
+}
 /* Trips Page */
     .rows {
         display: inline-grid;
