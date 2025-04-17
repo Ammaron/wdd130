@@ -65,11 +65,136 @@ nav a:hover {
     color: var(--accent2-color);
 }
 
+/* index page */
+.row1-index {
+    display: inline-grid;
+    grid-template-columns: 1fr 20vw 1fr;
+    padding: 10px 20px;
+    
+}
+
+.trips {
+    padding: 0 20px;
+    background-image: url("../images/rafting_image_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.trips button {
+    border: 2px solid var(--accent1-color);
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.trips button:hover {
+    border-radius: 20px;
+    background-color: var(--primary-color)
+}
+
+.trips h2, ul{
+    background-color: rgba(58, 90, 64, 0.5);
+}
+.trip-samples {
+    display: inline-grid;
+    grid-template-rows:    repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: end;
+    grid-column: 3;
+}
+
+.trip-samples img {
+    max-height: 200px;
+    max-width: 200px;
+    padding: 10px;
+}
+.trip-samples img:hover {
+    transform: scale(1.5);
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.row1-index h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    background-color: rgba(58, 90, 64, 0.5);
+    color: var(--accent2-color);
+    padding: 5px 10px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+/* Trips Page */
+    .rows {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 50px;
+    }
+
+    .rows p {
+        padding-right: 5vw;
+        font-size: 18px;
+    }
+
+    .rows img:hover {
+        transform: scale(1.5);
+    }
+
+    table {
+        margin: 40px auto;
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 90%;
+        max-width: 50vw;
+        text-align: left;
+    }
+
+    th {
+        padding: 10px;
+    }
+    td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    td:hover {
+        background-color: var(--accent1-color);
+        color: white;
+    }
 /* HERO styles */
 .hero {
     padding: 10px 0;
     position: relative;
-    margin: 0px 25px;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
 }
 
 .hero img {
@@ -77,13 +202,16 @@ nav a:hover {
 }
 
 .hero h1 {
-    text-align: center;
-    color: var(--accent2-color);
     position: absolute;
     top: 5px;
     left: 50%;
+    transform: translateX(-50%);
     font-size: 48px;
     background-color: rgba(58, 90, 64, 0.7);
+    color: var(--accent2-color);
+    padding: 10px 20px;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .hero article {
@@ -241,7 +369,7 @@ form:hover {
     box-shadow: 5px 9px var(--accent1-color);
     border: 2px solid var(--secondary-color);
 }
-button {
+.row2 button {
     border: 2px solid var(--accent1-color);
     background-color: var(--secondary-color);
     color: var(--accent2-color);

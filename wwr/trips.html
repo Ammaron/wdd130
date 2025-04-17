@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Rapids Inc, home of where you will find your next great adventure.">
+    <meta name="author" content="Kirby McDonald">
+    
+    <link rel="stylesheet" href="./styles/rafting.css">
+    <title>Home - Rapids Inc</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('./layout/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+            fetch('./layout/footer.html')
+            .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+        });
+    });
+      </script>
+</head>
+<body class="contact">
+    <header><nav></nav></header>
+    <div id="header"></div>
+    <main>
+        <div class="hero">
+            <div class="video-bg">
+                <img src="./images/trips/trip4.jpg">
+                    <h1 class="kite-one-regular">Let's Get Ready to Plan!</h1>
+                </div>
+        </div>
+        <div class="rows">
+            <div>
+            <h2>
+                Colorado River - Grand Canyon, Arizona
+            </h2>
+          <p>
+            A rafting trip through the Grand Canyon on the Colorado River is one of the most iconic adventures in North America. This journey takes you deep into one of the Seven Natural Wonders of the World, where 1.8 billion years of geologic history tower above you in vibrant layers. You'll paddle through legendary rapids like Hance, Granite, and Lava Falls, while also floating peacefully through calmer stretches that offer time to relax and take in the majesty of the canyon walls.</p><br>
+            <p>
+            Each day brings something new: hidden side canyons with waterfalls, ancient Ancestral Puebloan ruins, and even opportunities to spot bighorn sheep or California condors. Nights are equally special, with camping on sandy beaches, sharing stories under the stars, and listening to the sounds of the river echoing off the canyon walls. The Grand Canyon offers both a physical challenge and a deep connection to nature that stays with you long after you’ve left.</p><br>
+            <p>
+            Whether you're an experienced rafter or trying it for the first time, this trip offers a perfect mix of excitement and serenity. It’s more than a river trip — it’s a journey through time, history, and some of the most awe-inspiring landscapes on Earth. Spots fill fast, so grab your gear and come discover the Grand Canyon like never before.
+</p>
+</div>
+            <div class="image-overlay">
+                <img src="./images/colorado_river.jpg" alt="Colorado River">
+            </div>
+            </div>
+            <!-- row 2 -->
+            <div class="rows">
+                <div class="image-overlay">
+                    <img src="./images/trips/trip2.jpg" alt="Colorado River">
+                </div>
+                <div>
+                <h2>
+                    Chattooga River – Georgia & South Carolina
+                </h2>
+              <p>
+                The Chattooga River offers a wild, rugged rafting experience that feels like stepping back in time. Flowing along the border of Georgia and South Carolina, this river was the first in the Southeast to be designated “Wild and Scenic,” and it definitely lives up to the name. Surrounded by dense forests and steep gorges, the Chattooga is free-flowing — meaning no dams interrupt its natural rhythm — making every trip unique depending on rainfall and season.</p><br>
+<p>
+This river is famous for its rapids, especially the legendary Section IV, home to the intense “Five Falls” series that gives even seasoned paddlers a thrill. But the beauty of the Chattooga lies in its balance: between rapids, you’ll drift past mossy boulders, fern-covered banks, and tranquil swimming holes. There’s also a deep sense of solitude here — no nearby roads, no noise, just the sound of rushing water and the calls of birds overhead.</p><br>
+<p>
+Rafting the Chattooga is a perfect choice for those looking for a mix of adrenaline and pure nature. It's ideal for small groups or adventurous families who want to unplug and reconnect in a truly wild setting. If you're looking for a real escape with heart-pounding drops and peaceful forest beauty, the Chattooga is calling.
+
+    </p>
+    </div>
+    </div>
+    <div class="rows">
+        <div>
+        <h2>
+            Futaleufú River – Patagonia, Chile
+        </h2>
+      <p>
+        Tucked away in the heart of Patagonia, the Futaleufú River is often considered one of the top whitewater rivers in the world — and for good reason. Its electric-blue waters, born from glacial melt high in the Andes, carve through a dramatic landscape of granite cliffs, alpine meadows, and ancient forests. This river isn’t just a backdrop for adventure — it is the adventure. The Futaleufú is powerful, fast-moving, and technical, attracting thrill-seekers from all over the world.</p><br>
+        <p>
+        But don’t be fooled into thinking this trip is only about big rapids. While it certainly delivers pulse-pounding drops like “The Terminator” and “Casa de Piedra,” there are plenty of calmer sections too, where you can float, breathe in the crisp mountain air, and take in the views. Many itineraries also include side hikes, horseback riding, and visits to local Patagonian villages, giving you a real taste of life at the edge of the world.</p><br>
+        <p>
+        A trip down the Futaleufú is as much about immersion as it is adventure. You’ll camp at riverside eco-lodges, eat fresh meals cooked over open fires, and fall asleep under skies filled with stars. If you're looking for something truly wild and unforgettable — a place where nature still calls the shots — this river trip belongs at the top of your list.
+</p>
+</div>
+        <div class="image-overlay">
+            <img src="./images/trips/trip4.jpg" alt="Colorado River">
+        </div>
+        </div>
+        <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Details</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Colorado River – Grand Canyon, Arizona</td>
+                <td>8-day guided rafting trip through the Grand Canyon. Includes hikes, beach camping, and all meals.</td>
+                <td>$3,250</td>
+              </tr>
+              <tr>
+                <td>Chattooga River – Georgia & South Carolina</td>
+                <td>2-day rafting adventure on Section III or IV. Includes professional guide, gear, and riverside lunch.</td>
+                <td>$450</td>
+              </tr>
+              <tr>
+                <td>Futaleufú River – Patagonia, Chile</td>
+                <td>7-day Patagonian river expedition. Includes lodging, meals, rafting, hikes, and cultural excursions.</td>
+                <td>$4,100</td>
+              </tr>
+            </tbody>
+          </table>
+          
+            <!-- <div class="trip-samples">
+                <img src="./images/trips/trip1.jpg" alt="A fun rafting trip">
+                <img src="./images/trips/trip2.jpg" alt="A cool river adventure">
+                <img src="./images/trips/trip3.jpg" alt="A great rafting day">
+                <img src="./images/trips/trip4.jpg" alt="Chill trip on the water">
+                <img src="./images/trips/trip5.jpg" alt="Exciting rafting ride">
+                <img src="./images/trips/trip6.jpg" alt="Nice river journey">
+                <img src="./images/trips/trip7.jpg" alt="Rafting with friends">
+                <img src="./images/trips/trip8.jpg" alt="A fun group trip">
+                <img src="./images/trips/trip9.jpg" alt="Awesome water adventure">
+            </div> -->
+    </main>
+    <footer></footer>
+<div id="footer"></div>
+</body>
+</html>

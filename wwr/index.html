@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Rapids Inc, home of where you will find your next great adventure.">
+    <meta name="author" content="Kirby McDonald">
+    
+    <link rel="stylesheet" href="./styles/rafting.css">
+    <title>Home - Rapids Inc</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('./layout/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+            fetch('./layout/footer.html')
+            .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+        });
+    });
+      </script>
+</head>
+<body class="contact">
+    <header><nav></nav></header>
+    <div id="header"></div>
+    <main>
+        <div class="hero">
+            <div class="video-bg">
+                <video autoplay muted loop>
+                    <source src="videos/indexrafting.mp4" type="video/mp4">
+                    Your browser doesn't support video
+                </video>
+                    <h1 class="kite-one-regular">Welcome Home To your Next Adventure</h1>
+                </div>
+        </div>
+        <div class="row1-index">
+            <div class="image-overlay">
+                <img src="./images/colorado_river.jpg" alt="Colorado River">
+                <h1>Check Out Some of Our Crazy Trips!</h1>
+            </div>
+            <div class="trips">
+                <!-- <img src="./images/rafting_image_2.jpg" alt="a new adventure">   -->
+                <h2>
+                    We offer a variety of trips for you to take.
+                </h2>
+                <ul>
+                    <li>Colorado River – Grand Canyon, Arizona</li>
+                    <li>Chattooga River – Georgia & South Carolina</li>
+                    <li>Futaleufú River – Patagonia, Chile</li>
+                    <li>Ottawa River – Ontario, Canada</li>
+                    <li>Zambezi River – Victoria Falls, Zambia</li>
+                  </ul>
+                  <a href="trips.html">
+                    <button type="submit" value="Contact Us!">Check Out Our Trips!</button>
+                </a>                  
+            </div>
+            <div class="trip-samples">
+                <img src="./images/trips/trip1.jpg" alt="A fun rafting trip">
+                <img src="./images/trips/trip2.jpg" alt="A cool river adventure">
+                <img src="./images/trips/trip3.jpg" alt="A great rafting day">
+                <img src="./images/trips/trip4.jpg" alt="Chill trip on the water">
+                <img src="./images/trips/trip5.jpg" alt="Exciting rafting ride">
+                <img src="./images/trips/trip6.jpg" alt="Nice river journey">
+                <img src="./images/trips/trip7.jpg" alt="Rafting with friends">
+                <img src="./images/trips/trip8.jpg" alt="A fun group trip">
+                <img src="./images/trips/trip9.jpg" alt="Awesome water adventure">
+            </div>
+        </div>
+        <div class="row2">
+            <div class="form">
+                <form>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">E-Mail:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    
+                    <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
+                    <button type="submit" value="Subscribe">Subscribe!</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+<div id="footer"></div>
+</body>
+</html>
